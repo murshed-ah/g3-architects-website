@@ -64,7 +64,9 @@ main>section{
 }
 
 .bg-color{
+    max-width: 1980px;
     background-color: #E8E1CE;
+    margin: 0 auto;
 }
 
 .navbar{
@@ -105,7 +107,8 @@ main>section{
 
 .ban-img{
     width: 100%;
-    padding-bottom: 0px;
+    margin-bottom: -4px;
+
 }
 .btn-pri{
     margin-top: 8px;
@@ -149,6 +152,8 @@ main>section{
 /* f */
 .features{
     gap: 140px;
+    /* justify-items: center; */
+    align-items: center;
 }
 
 #o-bod{
@@ -159,6 +164,7 @@ main>section{
 
 .f-d{
     color: #e8e1ceb0;
+    margin-bottom: 35px;
 }
 
 .f-card{
@@ -177,6 +183,23 @@ main>section{
 
 .f-card p{
     color: #e8e1ceb0;
+}
+#fea-arch img{
+    width: 100%;
+}
+
+
+#ex-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -65px;
+    margin-top: -40px;
+}
+
+#boo{
+    font-size: 4rem;
+    font-weight: 700;    
 }
 
 
@@ -257,12 +280,31 @@ main>section{
     filter: grayscale(100%);
 }
 
+footer{
+    max-width: 1440px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #FFF4E7;
+    margin-top: 130px;
+    margin-bottom: 215px;
+}
+
+footer p{
+    color: #424242;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 39px 410px;
+}
+
 /* media querry */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links, .teams{
+    .navbar, .nav-links, .teams, .features{
         flex-direction: column;
     }
     
+    .banner{
+        justify-items: center;
+    }
     .t-img, .facts-con, .s-com {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -275,6 +317,20 @@ main>section{
         text-align: center;
         margin-left: 10px;
     }
+    #ex-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    footer{
+        width: auto;
+        
+    }
+
+footer p{
+    padding: 0;
+    padding-top: 25px;
+}
 }
 
 
@@ -286,7 +342,7 @@ main>section{
 
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams{
+    .teams, .features{
         flex-direction: column;
     }
     .our-f{
@@ -299,4 +355,18 @@ main>section{
         gap: 50px;
         justify-items: center;
     }
+    #ex-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+     footer{
+        width: auto;
+        
+    }
+
+footer p{
+    padding: 0;
+    padding-top: 35px;
+}
 }
